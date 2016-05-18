@@ -1,5 +1,7 @@
 # characters
-just some basic characters
+just some characters
 
-this is for learning Git
-see how git system works on files
+this repo is for learning Git
+see how it works on files
+
+2016/05/18
