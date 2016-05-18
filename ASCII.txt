@@ -1,0 +1,2 @@
+﻿//ASCII - American Standard Code for Information Interchange
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
