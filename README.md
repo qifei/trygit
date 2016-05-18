@@ -1,4 +1,4 @@
-# myfiles
+# characters
 just some basic characters
 
 this is for learning Git
