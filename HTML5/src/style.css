@@ -1,0 +1,200 @@
+﻿/* learning CSS3 */
+
+@import url("reset.css");
+
+@font-face{
+	font-family: bookTitle;
+	src: url("edition.ttf");
+}
+@font-face{
+	font-family: bookDescription;
+	src: url("vijaya.ttf");
+}
+
+body {
+	background-color: #444;
+}
+#container {
+	max-width: 1000px;
+	min-width: 480px;
+	width: 800px;
+	margin: auto;
+}
+
+.book-page {
+	width: 480px;
+	height: 800px;
+	padding: 60px 80px;
+	background-color: #fff;
+	margin: 10px auto;
+	box-shadow: 0px 0px 10px #000;
+	position: relative;
+}
+
+#cover {
+	background-color: #fff;
+	background: linear-gradient(to bottom, #fff 0, #fff 100px, #87C846 100px, #87C846 100%);
+	background: -moz-linear-gradient(top, #fff 0, #fff 100px, #87C846 100px, #87C846 100%);
+	background: -webkit-linear-gradient(top, #fff 0, #fff 100px, #87C846 100px, #87C846 100%);
+}
+
+.book-title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100px;
+	font-weight: normal;
+	line-height: 0.85em;
+	text-transform: uppercase;
+	text-align: left;
+	color: #2B2E34;
+	width: 6em;
+	font-stretch: ultra-condensed;
+	padding-top: 100px;
+}
+#cover .book-title {
+	padding-top: 440px;
+}
+.book-title em:nth-child(1){
+	color: #87C846;
+}
+#cover .book-title em:nth-child(1){
+	color: #fff;
+}
+.book-author {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #2B2E34;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #444;
+	position: absolute;
+	left: 80px;
+	top: 80px;
+	width: 480px;
+}
+#cover .book-author {
+	top: 430px;
+	color: #fff;
+}
+.book-seller {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #333;
+	text-transform: uppercase;
+	padding-top: 20px;
+	border-top: 2px solid #444;
+	margin-top: 20px;
+}
+.book-seller em {
+	text-transform: none;
+}
+.book-press {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	text-indent: 1.4em;
+	text-transform: uppercase;
+	color: #000;
+	position: absolute;
+	left: 80px;
+	top: 40px;
+	background-image: url(logo_press.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.book-series {
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	border-radius: 100%;
+	background-color: #2B2E34;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+.book-series strong {
+	display: block;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 3em;
+}
+.book-description {
+	font-family: bookDescription, Vijaya, Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #87C84C;
+	position: absolute;
+	left: 80px;
+	top: 60px;
+}
+
+.page-title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	color: #87C846;
+}
+
+.contents {
+	padding: 40px 0px;
+}
+.contents li {
+	margin: 0px 0px 20px;
+}
+.contents li dl {
+	position: relative;
+	padding-left: 60px;
+}
+.contents li dt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #8586A1;
+	padding: 10px 0px 5px 10px;
+	border-left: 1px solid #ddd;
+}
+
+.contents li dd {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.4em;
+	font-weight: 200;
+	color: #2B2E34;
+	padding: 5px 0px 10px 10px;
+	border-left: 1px solid #ddd;
+}
+.contents li dd:nth-child(3) {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	line-height: 2.2em;
+	text-align: right;
+	width: 40px;
+	color: #87C846;
+	padding: 10px 10px 10px 10px;
+	border-left: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.contents li:last-child dd:nth-child(3) {
+	line-height: 1.6em;
+}
+.contents li:last-child dd:nth-child(2) {
+	padding: 0px 0px 10px 10px;
+}
+.contents li:last-child dd:nth-child(1) {
+	display: none;
+}
+
+.page-content {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+	font-weight: 500;
+	color: #2B2E34;
+	line-height: 1.3em;
+}
+.page-content p {
+	margin: 1em 0 1.5em;
+}
