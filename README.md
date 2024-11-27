@@ -1,7 +1,5 @@
-﻿# characters
-> just some characters
+﻿# Git learning
 
-> this repo is for learning Git
-> see how it works on files
-
-> 2021/08/13 10:12
+> nothing to see here
+> 
+> please disperse
