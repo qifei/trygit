@@ -115,7 +115,7 @@
         "http_proxy": {
           "enabled": true,
           "server": "0.0.0.0",
-          "server_port": 7890
+          "server_port": 2080
         }
       }
     },
@@ -123,7 +123,7 @@
       "tag": "mixed",
       "type": "mixed",
       "listen": "0.0.0.0",
-      "listen_port": 7890,
+      "listen_port": 2080,
       "sniff": true
     }
   ],
