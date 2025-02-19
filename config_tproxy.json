@@ -20,11 +20,11 @@
     }
   },
   "dns": {
-    "servers": [
-      {"tag": "dns_direct", "address": "223.5.5.5", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
-      {"tag": "dns_proxy", "address": "tls://8.8.8.8", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🚀 节点选择"}
-    ],
-    "rules": [
+   "servers": [
+     {"tag": "dns_direct", "address": "223.5.5.5", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
+     {"tag": "dns_proxy", "address": "tls://8.8.8.8", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🚀 节点选择"}
+   ],
+   "rules": [
       {"outbound": "any", "server": "dns_direct", "disable_cache": true},
       {"clash_mode": "Direct", "server": "dns_direct"},
       {"clash_mode": "Global", "server": "dns_proxy"},
@@ -36,27 +36,10 @@
   },
   "inbounds": [
     {
-      "type": "tun",
-      "address": "172.19.0.1/30",
-      "mtu": 9000,
-      "auto_route": true,
-      "auto_redirect": true,
-      "strict_route": true,
-      "stack": "system",
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "0.0.0.0",
-          "server_port": 2080
-        }
-      }
-    },
-    {
-      "type": "mixed",
+      "type": "tproxy",
+      "tag": "tproxy-in",
       "listen": "0.0.0.0",
-      "listen_port": 2080,
-      "sniff": true,
-      "users": []
+      "listen_port": 7895
     }
   ],
   "outbounds": [
