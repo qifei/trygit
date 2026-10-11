@@ -118,6 +118,8 @@
       "type": "mixed",
       "listen": "0.0.0.0",
       "listen_port": 7890,
+      "sniff": true,
+      "sniff_override_destination": true,
       "users": [
         {
           "username": "sbmomo",
@@ -125,18 +127,6 @@
         }
       ]
     },
-    {
-      "type": "socks",
-      "tag": "socks-in",
-      "listen": "0.0.0.0",
-      "listen_port": 1080,
-      "users": [
-        {
-          "username": "sbmomo",
-          "password": "XCLWPMuC51R7"
-        }
-      ]
-    }
   ],
   "services": [
     {
